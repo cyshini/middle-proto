@@ -52,6 +52,13 @@ set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'
 set :images_dir, 'assets/images'
 
+#Activate deploy plugin
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'gh-pages'
+  deploy.build_before = true
+end
+
 # Build-specific configuration
 configure :build do
 
