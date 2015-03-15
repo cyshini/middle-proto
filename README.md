@@ -34,6 +34,7 @@ Launch the server on your machine
     middleman server
 
 Commit and push sources to your repository
+
     git commit -am "commit-message"
     git push origin master
 
