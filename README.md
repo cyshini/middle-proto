@@ -6,9 +6,8 @@ A clean and lightweight Middleman template for my personal projects, with all th
 
 ## Tools
 
-- [Bower](http://bower.io) *[js package management]*
-- [Bourbon + Neat + Bitters](http://bourbon.io/) *[sass mixins/grid/basic elements]*
 - [Middleman + extensions](https://middlemanapp.com/) *[Static site generator]*
+- [Bourbon + Neat + Bitters](http://bourbon.io/) *[sass mixins/grid/basic elements]*
 - [GitHub Pages](http://pages.github.com) *[deployment/hosting]*
 
 ## Demo
@@ -23,11 +22,9 @@ Set up your project in your code directory
     git remote rm origin
     git remote add origin your-git-url
 
-
 Install dependencies
 
     bundle install
-    bower install
 
 Launch the server on your machine
 
