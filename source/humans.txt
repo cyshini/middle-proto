@@ -3,13 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Middle-proto is made with love and pixels by François Vilaire.
 
-# THANKS
+# TECHNOLOGY
 
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Modernizr
+    Middleman, Github, SASS, Bourbon
