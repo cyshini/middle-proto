@@ -22,6 +22,10 @@ page "blog/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 activate :livereload
 
+# Activate sitemap
+page "/sitemap.xml", layout: false
+
+# Assets directories
 set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'
 set :images_dir, 'assets/images'
