@@ -1,3 +1,4 @@
-# robotstxt.org/
+User-Agent: *
+Allow: /
 
-User-agent: *
+Sitemap: http://cyshini.github.io/middle-proto/sitemap.xml

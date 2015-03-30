@@ -22,7 +22,7 @@ page "blog/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 activate :livereload
 
-# Activate sitemap
+# Add site map file
 page "/sitemap.xml", layout: false
 
 # Assets directories
@@ -47,6 +47,6 @@ configure :build do
   activate :relative_assets
   set :relative_links, true
 
-  activate :sitemap
+  activate :sitemap, hostname: "http://cyshini.github.io/middle-proto"
 
 end
