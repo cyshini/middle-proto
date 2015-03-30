@@ -6,44 +6,18 @@ Time.zone = "Paris"
 
 activate :blog do |blog|
   blog.name = "blog"
-  blog.permalink = "blog/:title.html"
-  blog.sources = "blog/articles/:title.html"
+  blog.prefix = "blog"
+  blog.permalink = "{title}.html"
+  blog.sources = "articles/{title}.html"
   blog.layout = "layouts/blog_layout"
   blog.default_extension = ".markdown"
   blog.paginate = false
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
+  blog.taglink = "categories/{tag}.html"
+  blog.tag_template = "blog/tag.html"
+  blog.calendar_template = "blog/calendar.html"
 end
 
-page "/feed.xml", layout: false
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", layout: false
-#
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+page "blog/feed.xml", layout: false
 
 # Reload the browser automatically whenever files change
 activate :livereload
