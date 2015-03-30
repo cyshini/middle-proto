@@ -43,7 +43,14 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
+
   activate :relative_assets
   set :relative_links, true
+
+  activate :sitemap, hostname: data.settings.site.url
+
+  activate :robots,
+    rules: [{:user_agent => '*', :allow => %w(/)}],
+    sitemap: data.settings.site.url+'sitemap.xml'
 
 end

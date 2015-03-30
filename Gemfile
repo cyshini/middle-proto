@@ -10,6 +10,7 @@ gem "middleman-livereload", "~> 3.3.0"
 gem "middleman-sitemap", "~> 0.0.13"
 gem "middleman-syntax", "~> 2.0.0"
 gem "middleman-navtree"
+gem "middleman-robots"
 
 #SASS magic
 gem "bitters"

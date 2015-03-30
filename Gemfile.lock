@@ -94,6 +94,8 @@ GEM
     middleman-navtree (0.1.8)
       middleman-core (~> 3.3)
       titleize (~> 1.3)
+    middleman-robots (1.0.1)
+      middleman (~> 3.3)
     middleman-sitemap (0.0.13)
       middleman-core (>= 3.2.2)
     middleman-sprockets (3.4.2)
@@ -164,6 +166,7 @@ DEPENDENCIES
   middleman-deploy (~> 1.0)
   middleman-livereload (~> 3.3.0)
   middleman-navtree
+  middleman-robots
   middleman-sitemap (~> 0.0.13)
   middleman-syntax (~> 2.0.0)
   neat
