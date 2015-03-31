@@ -11,13 +11,14 @@ activate :blog do |blog|
   blog.sources = "articles/{title}.html"
   blog.layout = "layouts/blog_layout"
   blog.default_extension = ".markdown"
-  blog.paginate = false
-  blog.taglink = "categories/{tag}.html"
+  blog.paginate = true
+  blog.per_page = 10
+  blog.taglink = "tags/{tag}.html"
   blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
 end
 
-page "feed.xml", layout: false
+page "blog/feed.xml", layout: false
 
 # Reload the browser automatically whenever files change
 activate :livereload
