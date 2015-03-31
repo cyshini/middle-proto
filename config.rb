@@ -17,7 +17,7 @@ activate :blog do |blog|
   blog.calendar_template = "blog/calendar.html"
 end
 
-page "blog/feed.xml", layout: false
+page "feed.xml", layout: false
 
 # Reload the browser automatically whenever files change
 activate :livereload
