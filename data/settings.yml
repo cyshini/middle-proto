@@ -1,0 +1,5 @@
+site:
+  title: Middle-Proto
+  author: Françoit Vilaire
+  description: "A clean and lightweight Middleman template for my personal projects, with all the useful and basic tools for starting awesome things."
+  url: 'http://cyshini.github.io/middle-proto'

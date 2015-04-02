@@ -6,19 +6,18 @@ Time.zone = "Paris"
 
 activate :blog do |blog|
   blog.name = "blog"
-  blog.prefix = "blog"
-  blog.permalink = "{title}.html"
-  blog.sources = "articles/{title}.html"
+  blog.permalink = "blog/{title}.html"
+  blog.sources = "blog/articles/{title}.html"
   blog.layout = "layouts/blog_layout"
   blog.default_extension = ".markdown"
   blog.paginate = true
   blog.per_page = 10
-  blog.taglink = "tags/{tag}.html"
+  blog.taglink = "blog/tags/{tag}.html"
   blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
 end
 
-page "blog/feed.xml", layout: false
+page "/feed.xml", layout: false
 
 # Reload the browser automatically whenever files change
 activate :livereload
