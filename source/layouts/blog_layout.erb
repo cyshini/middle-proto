@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Middle Blog<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title>Blog<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <%= feed_tag :atom, "#{data.settings.site.url}/feed.xml", title: "Atom Feed" %>

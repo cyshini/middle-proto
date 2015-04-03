@@ -43,10 +43,11 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
+  activate :minify_html
 
   activate :relative_assets
   set :relative_links, true
 
-  activate :sitemap, hostname: "http://cyshini.github.io/middle-proto"
+  activate :sitemap, hostname: data.settings.site.url
 
 end
