@@ -4,5 +4,10 @@ header {
     @include span-columns(12);
     padding: 2em 0;
   }
-  nav ul li { @include span-columns(1); }
+  nav ul li {
+    @include span-columns(1);
+    @include media ($medium-screen-up) {
+      @include span-columns(1);
+    }
+  }
 }

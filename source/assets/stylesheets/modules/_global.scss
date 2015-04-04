@@ -1,7 +1,17 @@
 #main {
   @include outer-container;
-  aside { @include span-columns(3); }
-  article { @include span-columns(9); }
+  article {
+    @include span-columns(9);
+    @include media ($medium-screen-up) {
+      @include span-columns(4);
+    }
+  }
+  aside {
+    @include span-columns(3);
+    @include media ($medium-screen-up) {
+      @include span-columns(4);
+    }
+  }
 }
 
 ul.default { @extend %default-ul; }
