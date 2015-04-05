@@ -1,11 +1,11 @@
 language: ruby
 
 rvm:
-  - 2.1.2
+  - 2.2.1
 
 branches:
   only:
     - master
 
 script:
-  - "bundle exec middleman deploy"
+  - "middleman deploy"
