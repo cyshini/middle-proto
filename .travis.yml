@@ -3,6 +3,13 @@ language: ruby
 rvm:
   - 2.2.1
 
+env:
+  global:
+    - GIT_COMMITTER_NAME=cyshini
+    - GIT_COMMITTER_EMAIL=francois.vilaire@gmail.com
+    - GIT_AUTHOR_NAME=cyshini
+    - GIT_AUTHOR_EMAIL=francois.vilaire@gmail.com
+
 branches:
   only:
     - master
