@@ -1,0 +1,11 @@
+language: ruby
+
+rvm:
+  - 2.1.2
+
+branches:
+  only:
+    - master
+
+script:
+  - "middleman deploy"
