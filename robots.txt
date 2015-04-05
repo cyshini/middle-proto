@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: http://cyshini.github.io/middle-proto/sitemap.xml
