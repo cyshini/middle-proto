@@ -8,4 +8,4 @@ branches:
     - master
 
 script:
-  - "middleman deploy"
+  - "bundle exec middleman deploy"
